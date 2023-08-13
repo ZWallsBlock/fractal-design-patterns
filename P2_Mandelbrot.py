@@ -50,6 +50,7 @@ def Process_Fractal(a):
     a = np.uint8(np.clip(a, 0, 255))
     return a
     
+
 plt.imshow(Process_Fractal(ns.cpu().numpy()))
 plt.tight_layout(pad=0)
 plt.show()
