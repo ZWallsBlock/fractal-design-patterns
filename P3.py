@@ -41,7 +41,7 @@ def koch_snowflake(iterations, device):
 device = torch.device("mps")
 
 # Compute the Koch snowflake fractal
-iterations = 8
+iterations = 7
 points = koch_snowflake(iterations, device)
 
 # Plot the fractal
