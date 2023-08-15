@@ -21,7 +21,7 @@ y = y.to(device)
 r = x**2 + y**2
 
 # aka standard deviation
-sigma = 2
+sigma = 50
 
 # Computing Gaussian Function
 z_gaus = torch.exp(-r**2/sigma)
@@ -47,9 +47,9 @@ plt.imshow(z_cos.cpu().numpy())
 plt.tight_layout()
 plt.show()
 
-# Multiplying the Sine, Co-Sine and Gaus Functions together
+# Multiplying the Sine and Gaus Functions together
 # to get approximation of Gabor Filter
-z_gaus_sin = z_gaus * z_sin * z_cos
+z_gaus_sin = z_gaus * z_sin
 
 
 plt.imshow(z_gaus_sin.cpu().numpy())

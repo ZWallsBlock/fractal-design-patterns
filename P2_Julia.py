@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 device = torch.device('cpu')
 
 # Using Numpy to create a 2D array of complex numbers [-2,2]x[-2,2]
-Y, X = np.mgrid[-1.3:1.3:0.0002, -2:1:0.0002]
+Y, X = np.mgrid[-1.3:1.3:0.0003, -2:1:0.0003]
 
 # Loading in PyTorch tensors
 x = torch.Tensor(X)

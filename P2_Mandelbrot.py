@@ -9,7 +9,7 @@ print(torch.backends.mps.is_built())
 device = torch.device('cpu')
 
 # Using Numpy to create a 2D array of complex numbers [-2,2]x[-2,2]
-Y, X = np.mgrid[-1.3:1.3:0.0001, -2:1:0.0001]
+Y, X = np.mgrid[-1.0:1.0:0.0005, -2:1:0.0005]
 
 # Loading in PyTorch tensors
 x = torch.Tensor(X)
