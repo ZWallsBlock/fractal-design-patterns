@@ -25,4 +25,5 @@ See the [Installation](#installation) section for setup instructions and the [Us
 ```bash
 git clone https://github.com/yourusername/FractalDesignPatterns.git
 cd FractalDesignPatterns
+pip install numpy matplotlib torch
 python main.py
